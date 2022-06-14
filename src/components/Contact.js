@@ -73,8 +73,8 @@ const Contact = () => {
        {emailError}
        <input 
         type="text" placeholder='E-mail id' 
-         onChange={(e)=>checkEmail(e)}
-       required /> 
+        onChange={(e)=>{setEmail(e.target.value);checkEmail(e)}}
+        required /> 
        
          <label>Mobile Number</label>
          <input
