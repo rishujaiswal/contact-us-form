@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import "../App.css";
 import { db } from "../firebase";
 import validator from 'validator'; 
@@ -9,7 +9,6 @@ const Contact = () => {
 
   const[name,setName]=useState("");
   const[email,setEmail]=useState("");
-  const[error,setError]=useState("");
   const[mobile,setmobile]=useState("");
   const[subject,setSubject]=useState("");
   const[message,setMessage]=useState(""); 
